@@ -89,6 +89,10 @@ const Navbar = () => {
 					</h1>
 	 			</div>
 
+	 			<div>
+	 				<p>Please support my work! Donate ETH to stormcrypto.eth, thank you, fren!</p>
+	 			</div>
+
 	 			<div className="flex items-center">
 	 				BTC: ${bitcoinPrice} |
 					ETH: ${ethereumPrice}
