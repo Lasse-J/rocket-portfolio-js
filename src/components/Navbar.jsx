@@ -90,7 +90,7 @@ const Navbar = () => {
 	 			</div>
 
 	 			<div>
-	 				<p>Please support my work! Donate ETH to stormcrypto.eth, thank you, fren!</p>
+	 				<p>Donations to STORMCRYPTO.eth Thank you, crypto bro!</p>
 	 			</div>
 
 	 			<div className="flex items-center">

@@ -8,6 +8,7 @@ import Overview from '@/components/Overview';
 import Holdings from '@/components/Holdings';
 import Values from '@/components/Values';
 import List from '@/components/List';
+import Info from '@/components/Info';
 
 // Snapshot Data
 // import marketSnapshot from '@/app/snapshots/markets.json'
@@ -18,6 +19,8 @@ export default function Home() {
   const [trackedAssets, setTrackedAssets] = useState([]);
   const [markets, setMarkets] = useState(null);
   const [assets, setAssets] = useState([]);
+
+  const [isInfoModalOpen, setIsInfoModalOpen] = useState(true)
 
   // Makes API call to fetch market data
   const getMarkets = async () => {
@@ -136,6 +139,13 @@ export default function Home() {
           <div className="divider absolute top-[100px] -left-1/2 -z-50 w-[150%] h-[60px] bg-blue-500">
           </div>
         </div>
+
+        {isInfoModalOpen &&
+          <Info
+            setIsInfoModalOpen={setIsInfoModalOpen}
+          />
+        }
+
       </main>
     </div>
   );
